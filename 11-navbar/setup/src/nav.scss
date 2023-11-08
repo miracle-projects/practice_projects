@@ -1,0 +1,93 @@
+		.driver__left-content {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			padding-top: 10px;
+			img {
+				object-fit: cover;
+				width: 10rem;
+			}
+			.links__container {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				.menu {
+					font-style: normal;
+					font-weight: 600;
+					font-size: 17px;
+					line-height: 17px;
+					padding-right: 5px;
+					font-family: "Inter-Light";
+					margin-top: 7px;
+
+					.link {
+						color: var(--clr-white);
+						display: inline-block;
+						position: relative;
+						margin: 0;
+						padding: 10px 20px;
+						cursor: pointer;
+					}
+					.submenu {
+						display: block;
+						position: absolute;
+						left: 0;
+						top: 100%;
+						height: 0;
+						width: 100%;
+						overflow: hidden;
+						background: rgba(109, 108, 108, 0.1);
+						transition: 0.2s;
+						width: 9rem;
+
+						& li {
+							display: block;
+							position: relative;
+							margin: 0;
+							padding: 10px 20px;
+							cursor: pointer;
+							font-size: 15px;
+							transition: 0.6s ease-in-out;
+						}
+					}
+					li:hover {
+						background: transparent;
+					}
+					li:hover ul {
+						height: 130px;
+					}
+				}
+			}
+		}
+
+		.sign__in-btn {
+			.sign__in {
+				font-style: normal;
+				font-weight: 600;
+				font-size: 17px;
+				line-height: 17px;
+				padding-right: 5px;
+				font-family: "Inter-Light";
+				color: #fff;
+				border: 1px solid #fff;
+				padding: 10px;
+				display: block;
+					@media screen and (max-width: 1000px) {
+					display: none;
+				}
+			}
+			.hamburger {
+				color: #fff;
+				font-size: 30px;
+				width: 30px;
+				height: 30px;
+				display: none;
+				&:hover {
+				}
+				@media screen and (max-width: 1000px) {
+					display: block;
+				}
+			}
+		}
+
+		
